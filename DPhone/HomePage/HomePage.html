@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Link CSS -->
+	<link rel="stylesheet" href="./pop.css">
 	<link rel="stylesheet" href="./HomePage.css">
 	<!-- Fontawesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
@@ -15,6 +16,15 @@
 </head>
 
 <body>
+
+	<!--start pop ads -->
+	<div class="overlay">
+        <div class="pou-up">
+            <button id="close-pop">X</button>
+        </div>
+    </div>
+	<!--end pop ads -->
+
 	<!----------------------------------------------------- Header STARTS  ----------------------------------------------------->
 	<div class="header__container section_item" id="home">
 		<video class="video-background active" loop muted>
@@ -689,5 +699,5 @@
 </body>
 <!-- Link JS -->
 <script src="./HomePage.js"></script>
-
+<script src="./pop.js"></script>
 </html>
