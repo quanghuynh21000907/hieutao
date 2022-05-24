@@ -11,9 +11,9 @@ const removeModal = () => {
    if (e.target.id !== 'dropdownAvt' && e.target.id !== 'openDropdownAvt') {
      dropdownAvt.classList.remove('active')
    }
-   if (e.target.id !== 'notificationModal' && e.target.id !== 'openNotificationModal') {
-     notificationModalbox.classList.remove('active')
-   }
+  //  if (e.target.id !== 'notificationModal' && e.target.id !== 'openNotificationModal') {
+  //    notificationModalbox.classList.remove('active')
+  //  }
    if (e.target.id !== 'modalLanguages' && e.target.id !== 'openModalLanguages') {
      modalLanguage.classList.remove('active')
     }
@@ -22,7 +22,7 @@ const removeModal = () => {
     }
  }
 }
-removeModal()
+//removeModal()
 
 // Xử lí dropdown Component Menu
 var cpnMenu = document.querySelectorAll('.component__menu__dropdown__box li')
@@ -41,12 +41,12 @@ cpnMenu.forEach(btn => {
 })
 
 // Xử lí modal thông báo
-var notificationModalbox = document.querySelector('#notificationModal')
-var notificationModalboxOpen = document.querySelector('#openNotificationModal')
-notificationModalboxOpen.addEventListener('click', function(){
-  notificationModalbox.classList.toggle('active')
-  notificationModalboxOpen.classList.toggle('active')
-})
+// var notificationModalbox = document.querySelector('#notificationModal')
+// var notificationModalboxOpen = document.querySelector('#openNotificationModal')
+// notificationModalboxOpen.addEventListener('click', function(){
+//   notificationModalbox.classList.toggle('active')
+//   notificationModalboxOpen.classList.toggle('active')
+// })
 
 // Đóng khi click vào backgorund modal thêm sửa xóa
 var bgModal = document.querySelector('.bg__modal__box')

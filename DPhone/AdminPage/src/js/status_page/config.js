@@ -9,7 +9,7 @@ let currentBrandStatusChoice='';
 const ctx = document.getElementById('myChart').getContext('2d');
 const DoughnutChart_1 = document.getElementById('myDoughnutChart_1').getContext('2d');
 const DoughnutChart_2 = document.getElementById('myDoughnutChart_2').getContext('2d');
-const DoughnutChart_3 = document.getElementById('myDoughnutChart_3').getContext('2d');
+// const DoughnutChart_3 = document.getElementById('myDoughnutChart_3').getContext('2d');
 
 let myChart;
 

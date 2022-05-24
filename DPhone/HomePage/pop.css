@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#close-pop{
+    background: none;
+    border: none;
+    width: 25px;
+    height: 25px;
+}
+
+#close-pop:hover{
+    background-color: red;
+}
+
+.overlay{
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: rgba(27, 23, 23, 0.356);
+}
+
+.pou-up{
+    max-width: 600px;
+    height: 400px;
+    background-image: url(./img_HomePage/ads.jpg)  ;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.show-pop{
+    opacity: 1;
+    animation: show 0.2s;
+}
+
+@keyframes show{
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.hide-pop{
+    opacity: 0;
+    animation: hide .25s;
+}
+
+@keyframes hide{
+    from{
+        opacity: 1;
+        transform: scale(1);
+    }
+    to{
+        opacity: 0;
+        transform: scale(0);
+    }
+}
