@@ -51,12 +51,11 @@
       <h4 class="admin__content__left__main__menu__title">Menu Chính</h4>
       <div class="admin__content__left__main__menu">
        <ul>
-        <li><a class="active" href="#"><i class="fas fa-th-large active"></i><span>Quảng Cáo</span></a></li>
+        <li><a class="active" href="#"><i class="fas fa-th-large active"></i><span>Điều Khiển</span></a></li>
         <li><a href="#"><i class="fas fa-chart-pie"></i><span>Thống Kê</span></a></li>
         <li><a href="#"><i class="fas fa-shopping-cart"></i><span>Đơn Hàng</span></a></li>
         <li><a href="#"><i class="fab fa-xbox"></i><span>Quản Lý Sản Phẩm</span></a></li>
         <li><a href="#"><i class="fas fa-user-circle"></i><span>Quản Lý Người Dùng</span></a></li>
-        <li><a href="#"><i class="fa-solid fa-house"></i><span>Quan Lý Trang Chủ</span></a></li>
         <li><a href="#"><i class="fas fa-user-plus"></i><span>Liên Hệ</span></a></li>
        </ul>
       </div>
@@ -87,16 +86,14 @@
         <div class="admin__content__right__header__search__icon"><i class="fas fa-search"></i></div>
        </div>
        <div class="admin__content__right__header__icon__group">
-         <div class=" admin__content__right__header__icon">
-          <div id="openNotificationModal">
-            <!-- <i class="fas fa-bell"></i> -->
-          </div>
+         <div class="admin__content__right__header__icon__notification admin__content__right__header__icon">
+          <div id="openNotificationModal"><i class="fas fa-bell"></i></div>
           <div class="header__icon__notification__modalbox" id="notificationModal">
             <div class="header__icon__notification__modalbox__header">
               Thông báo <span>Đóng</span>
             </div>
             <div class="header__icon__notification__modalbox__content">
-              <!-- <div class="header__icon__notification__modalbox__content__item">
+              <div class="header__icon__notification__modalbox__content__item">
                 <i class="fas fa-users"></i> 
                 Xin chào thế giới
               </div>
@@ -119,17 +116,17 @@
               <div class="header__icon__notification__modalbox__content__item">
                 <i class="fas fa-user"></i>
                 Nhật kí viết lúc 11:09 5/12/2021
-              </div> -->
-              <!-- <div class="header__icon__notification__view__all">View All</div> -->
+              </div>
+              <div class="header__icon__notification__view__all">View All</div>
             </div>
           </div>
          </div>
          <div class="admin__content__right__header__icon__action admin__content__right__header__icon">
-          <!-- <i class="fas fa-cog"></i> -->
+          <i class="fas fa-cog"></i>
         </div>
         <div class="admin__content__right__header__icon__languages admin__content__right__header__icon">
          <div id="openModalLanguages">
-          <!-- <i class="fas fa-globe-americas"></i> -->
+          <i class="fas fa-globe-americas"></i>
          </div>
          <div class="admin__content__right__header__icon__languages__dropdown" id="modalLanguages">
            <div class="header__icon__languages__dropdown__item">
@@ -289,59 +286,59 @@
           <!-- Statistics STARTS -->
           <div class="content__right__main__left__statistics">
             <div class="content__right__main__left__statistics__item">
-              <!-- <div class="statistics__item__number"><span>52</span></div>
+              <div class="statistics__item__number"><span>52</span></div>
               <div class="statistics__item__text">Sản Phẩm Đang Bán</div>
-              <div class="statistics__item__percent"><i class="fas fa-arrow-up"></i>1.8%</div> -->
+              <div class="statistics__item__percent"><i class="fas fa-arrow-up"></i>1.8%</div>
             </div>
             <div class="content__right__main__left__statistics__item">
-              <!-- <div class="statistics__item__number"><span>12</span></div>
+              <div class="statistics__item__number"><span>12</span></div>
               <div class="statistics__item__text">Đơn Hàng Đã Đặt</div>
-              <div class="statistics__item__percent"><i class="fas fa-arrow-up"></i>1.8%</div> -->
+              <div class="statistics__item__percent"><i class="fas fa-arrow-up"></i>1.8%</div>
             </div>
             <div class="content__right__main__left__statistics__item">
-              <!-- <div class="statistics__item__number"><i class="fas fa-dollar-sign"></i><span>7745</span></div>
+              <div class="statistics__item__number"><i class="fas fa-dollar-sign"></i><span>7745</span></div>
               <div class="statistics__item__text">Tổng Doanh Thu</div>
-              <div class="statistics__item__percent"><i class="fas fa-arrow-up"></i>1.8%</div> -->
+              <div class="statistics__item__percent"><i class="fas fa-arrow-up"></i>1.8%</div>
             </div>
           </div>
           <div class="content__dashboard__main__wrapper">
             <div class="content__dashboard__main__title">
-              <!-- <i class="fas fa-cloud-download-alt"></i>
-              Sao lưu dữ liệu về máy -->
+              <i class="fas fa-cloud-download-alt"></i>
+              Sao lưu dữ liệu về máy
             </div>
             <div class="content__dashboard__file__box">
-              <div class="content__dashboard__file__box__item"  >
+              <div class="content__dashboard__file__box__item">
                 <div class="content__dashboard__file__box__title">
-                  <!-- <p><i class="fas fa-save"></i> Lưu dữ liệu của sản phẩm </p> -->
+                  <p><i class="fas fa-save"></i> Lưu dữ liệu của sản phẩm </p>
                   <div class="content__dashboard__file__box__description">
-                    Chọn ảnh để đăng quản cáo
+                    Chọn file để lưu dữ liệu sản phẩm
                   </div>
                 </div>
-                <div class="content__dashboard__file__download" >
-                  Đăng ngay <i class="fas fa-arrow-circle-down"></i>
+                <div class="content__dashboard__file__download" onclick="saveProductButton(getContentProductFromStorage())">
+                  Lưu ngay <i class="fas fa-arrow-circle-down"></i>
                 </div>
               </div>
-              <div class="">
+              <div class="content__dashboard__file__box__item">
                 <div class="content__dashboard__file__box__title">
-                  <!-- <p><i class="fas fa-save"></i> Lưu dữ liệu của người dùng và giỏ hàng</p>
+                  <p><i class="fas fa-save"></i> Lưu dữ liệu của người dùng và giỏ hàng</p>
                   <div class="content__dashboard__file__box__description">
                     Chọn file để lưu dữ liệu người dùng và giỏ hàng
-                  </div> -->
+                  </div>
                 </div>
-                <!-- <div class="content__dashboard__file__download" onclick="saveProductButton(getContentUserFromStorage())">
+                <div class="content__dashboard__file__download" onclick="saveProductButton(getContentUserFromStorage())">
                   Lưu ngay <i class="fas fa-arrow-circle-down"></i>
-                </div> -->
+                </div>
               </div>
-              <div class="">
+              <div class="content__dashboard__file__box__item">
                 <div class="content__dashboard__file__box__title">
-                  <!-- <p><i class="fas fa-save"></i> Lưu dữ liệu đơn hàng</p>
+                  <p><i class="fas fa-save"></i> Lưu dữ liệu đơn hàng</p>
                   <div class="content__dashboard__file__box__description" >
                     Chọn file để lưu dữ liệu đơn hàng
-                  </div> -->
+                  </div>
                 </div>
-                <!-- <div class="content__dashboard__file__download" onclick="saveProductButton(getContentOrderFromStorage())">
+                <div class="content__dashboard__file__download" onclick="saveProductButton(getContentOrderFromStorage())">
                   Lưu ngay <i class="fas fa-arrow-circle-down"></i>
-                </div> -->
+                </div>
               </div>
             </div>
           </div>
@@ -349,9 +346,9 @@
         </div>
         <div class="content__right__main__right">
           <div class="recent__activity__container">
-            <!-- <div class="recent__activity__title">Hoạt Động Gần Đây</div>
+            <div class="recent__activity__title">Hoạt Động Gần Đây</div>
             <div class="recent__activity__content">
-            </div> -->
+            </div>
           </div>
         </div>
       </div>
@@ -397,17 +394,17 @@
 
         <div class="statistical__doughnut-chart__item">
           <div class="statistical__doughnut-chart__item__left">
-            <!-- <div class="doughnut-chart__item__left__icon doughnut-chart__item__left__icon-3"><i class="fas fa-money-check-alt"></i></div>
+            <div class="doughnut-chart__item__left__icon doughnut-chart__item__left__icon-3"><i class="fas fa-money-check-alt"></i></div>
             <div class="doughnut-chart__item__left__icon__text">
               Doanh Thu <p>0 %</p>
-            </div> -->
+            </div>
           </div>
           <div class="statistical__doughnut-chart__item__right">
             <div class="statistical__doughnut-chart__item__right__content" style="position: relative; width:60%">
-              <!-- <div class="doughnut-chart__item__right__content__text doughnut-chart__item__right__content__text-3">
+              <div class="doughnut-chart__item__right__content__text doughnut-chart__item__right__content__text-3">
                 Chiếm <p>0</p>
-              </div> -->
-              <canvas id="myDoughnutChart_3" style="z-index:100 ,display: none"></canvas>
+              </div>
+              <canvas id="myDoughnutChart_3" style="z-index:100"></canvas>
             </div>
           </div>
         </div>
