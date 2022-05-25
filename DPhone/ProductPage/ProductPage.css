@@ -11,7 +11,7 @@ a {
 }
 
 :root {
-  --main-color: #7047ee; /*Màu chính cho toàn web*/
+  --main-color: #55cb8a; /*Màu chính cho toàn web*/
 }
 
 html {
@@ -1809,10 +1809,6 @@ h3.product__modal__details__name {
   gap: 5px;
 }
 
-.product__footer__end svg {
-  font-size: 15px;
-  color: crimson;
-}
 
 .open__filter__mobile__screen {
   display: none;
